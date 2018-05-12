@@ -1,0 +1,352 @@
+/*content*/
+.game_space{
+  height: 100vh;
+}
+.game_content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+.pick {
+  /*outline: 5px solid white;*/
+  margin:0 auto;
+  width:20%; 
+  height:25vh;   
+  padding: 0em;
+  margin-top: 0px;
+}
+.pick img{
+  margin:0 auto;
+  width:30%; 
+  max-height:25vh;   
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+#rs1,#rs3,#rs4 {
+  margin:0 auto;
+  width:80%;    
+  padding: 0.5em;
+}
+#rs5 {
+  margin:0 auto;
+  width:50%;    
+  padding: 0.5em;
+}
+#rs2{
+  margin:0 auto;
+  width:30%;    
+  padding:0;
+  margin:0px;
+}
+.rs-outline{
+  float:left;
+  width:100%;
+  /*height:450px;*/
+  padding:0.5em;
+ /*outline: 1px solid black;*/
+}
+#r2{
+  max-width:65%;
+  margin-top: 10%;
+}
+#r5{
+  max-width:48%;
+
+}
+#r4,
+#r6{
+  max-width:45%;
+
+}
+#r1,
+#r3{  
+  margin-top:35%;
+  max-width: 90%;
+}
+.plane-jet, .plane-tail, .plane-body, .plane-wing , .plane-wing2{
+
+}
+.plane img, .car img, .board img{
+	display: block;
+  outline: 1px solid black;
+  width:10%;
+  height: auto;
+  color:black;
+}
+.right{
+  float:left;
+	margin-top: 5% !important;
+}
+.grid{
+	overflow: hidden;
+}
+/*.tabnav, .showing, .mainbody{
+	margin-top: 5% !important;
+}*/
+
+
+/**/
+.hidden {
+  display:none;
+}
+a {
+  color:inherit;
+}
+.for-label {
+  display:inline-block;
+  max-width: 100%;
+  text-align:center;
+  line-height:2em;
+}
+.cover-menu {
+  margin-top:20px;
+  width:100%;
+  overflow:hidden;
+  cursor: pointer;
+}
+
+.cover-menu-menu {
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  transition:all 0.3s; 
+ 
+  color:black;
+  opacity:0;
+  font-size:4em;
+  pointer-events:none;
+}
+.cover-menu-menu ul {
+  margin:0;
+  font-size:0.5em;
+  position:absolute;
+  list-style-type:none;
+  padding-left:0;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.cover-menu>input[type=checkbox]:checked~.cover-menu-menu {
+  opacity:1;
+  pointer-events:initial;
+}
+/*generate-boat*/
+ 
+
+.cover-menu3 {
+  margin-top:20px;
+  width:100%;
+  overflow:hidden;
+  cursor: pointer;
+}
+.cover-menu-menu3 {
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  transition:all 0.3s; 
+  background:rgba(0,188,255,0.6) url("../img/weiqi/subrine-01.png")no-repeat center;
+  color:black;
+  opacity:0;
+  font-size:4em;
+  pointer-events:none;
+}
+.cover-menu-menu3 ul {
+  margin:0;
+  font-size:0.5em;
+  position:absolute;
+  list-style-type:none;
+  padding-left:0;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.cover-menu3>input[type=checkbox]:checked~.cover-menu-menu3 {
+  opacity:1;
+  pointer-events:initial;
+}
+/*other*/
+.mainbody{
+  width: 100%;
+  height:75vh;
+}
+.subbody{
+  width: 100%;
+  height:25vh;
+  background-color:rgba(250,250,250,0.6);
+}
+#maincover{
+  width: 78%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin:0 auto;
+}
+.nav-choose{
+  margin:0rem;
+}
+.nav-choose p{
+  margin:0rem;
+}
+.cover-generate{
+  position: absolute;
+  right: 15px;
+  top: 0;
+  background-color: blue;
+}
+
+/*boat*/
+/*boat*/
+
+#bs1,#bs3,#bs4 {
+  margin:0 auto;
+  width:80%;    
+  padding: 0.5em;
+  margin:3px;
+}
+#bs5 {
+  margin:0 auto;
+  width:50%;    
+  padding: 0.5em;
+  margin:3px;
+}
+#bs2{
+  margin:0 auto;
+  width:37%;    
+  padding:0em;
+  margin:0px;
+}
+.bs-outline{
+  float:left;
+  width:100%;
+  /*height:450px;*/
+  padding:0.5em;
+  padding-bottom:1em;
+ /*outline: 1px solid black;*/
+  margin-bottom: 10px;
+}
+#b2{
+max-width:65%;
+margin-top: 10%;
+
+}
+#b5{
+max-width:48%;
+
+}
+#b4,
+#b6{
+  
+  max-width:45%;
+
+}
+#b1,
+#b3{  
+   margin-top:20%;
+  max-width: 90%;
+}
+.background{
+  background-image:url('../img/weiqi/background.jpg');
+}
+/*generate*/
+.button{
+  color:white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+
+}
+
+.generate_space{
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: black;
+  transition: all 0.5s;
+  z-index: 9999999;
+}
+
+.generate_button{
+  display: none;
+}
+
+.content_space{
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+#world {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-image: url('../img/weiqi/sky.jpg');
+}
+#world2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-image: url('../img/weiqi/ocean.jpg');
+}
+
+#close_button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color:white;
+  width: 50px;
+  cursor: pointer;
+}
+
+.space{
+  padding-top: 15px;
+}
+/*change- left-right*/
+.change-right{
+  position:absolute;
+  right:10px;
+  top:40vh;
+  z-index: 999;
+}
+#right_button{
+  width: 1.2rem;
+}
+.change-left{
+  position:absolute;
+  left:10px;
+  top:40vh;
+  z-index: 999;
+}
+#left_button{
+  width: 1.2rem;
+}
+/*Laptop*/
+@media only screen and ( min-width: 1400px) {
+  #maincover {
+    width: 63%;
+  }
+}

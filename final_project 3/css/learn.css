@@ -1,0 +1,107 @@
+.padding{
+    height: 15px;
+}
+.recycle_box{
+    min-height: 33.3333333333vh;
+}
+#box1{
+    background-color: #52AA54;
+}
+#box2{
+    background-color: #3174C1;
+}
+#box3{
+    background-color: #454545;
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    cursor: pointer;
+}
+
+.title span{
+    display: inline-block;
+    width: 180px;
+    padding: 5px 15px;
+    border: 2.5px solid #ffffff;
+    border-radius: 8px;
+    background:transparent;
+}
+.subtitle{
+    float: left;
+
+}
+.subtitle img{
+    width: 6%;
+    height: auto;
+}
+.box_content{
+    width: 100%; /* 不写，展开时， 左右会有白边  */
+    height: 0;
+    transition: height 0.4s linear;
+    overflow: hidden;
+    text-align: left;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.box_content_open{
+    height: 55vh;
+    transition: height 0.4s linear;
+}
+.dot{
+    padding-right: 10px;
+}
+.row{
+    justify-content: center;
+}
+.list{
+    height: 12vh;
+}
+.list img{
+    width: 25%;
+}
+.list_text{
+    font-size: 0.9rem;
+    padding-left: 5px;
+}
+.col-2{
+    text-align: center;
+}
+.col_25{
+    text-align: left;
+    width: 20%
+}
+/*Laptop*/
+@media only screen and ( min-width: 1600px) {
+    .title{
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+}
+/*iPad*/
+@media only screen and ( max-width: 1100px) {
+    .title{
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+}
+/*iPhone Plus*/
+@media only screen and ( max-width: 850px) {
+    .title{
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .list img{
+        width: 40%;
+    }
+}
+/*iPhone*/
+@media only screen and ( max-width: 700px) {
+    .title{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

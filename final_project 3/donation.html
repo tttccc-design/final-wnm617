@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrashExpert</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lato:900i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    
+    <style type="text/css">
+        .background{
+            background-image:url('img/background.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger_menu">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/main.html" class="hamburger">
+                        <li>HOME</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/learn.html" class="hamburger">
+                        <li>LEARNING</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game1.html" class="hamburger">
+                        <li>GAME 1</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game2.html" class="hamburger">
+                        <li>GAME 2</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/donation.html" class="hamburger">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a id="log_out" class="hamburger"><li>LOG OUT</li></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="window">
+        <div class="background">
+            <div class="container">
+                <div class="about">
+                    <div class="about_subtitle">
+                        WELCOME TO
+                    </div>
+                    <div class="about_title">
+                        TrashExpert
+                    </div>
+                    <div class="about_space">
+                        <div class="about_slogan">
+                            TrashExpert is a San Francisco-based startup.
+                        </div>
+                        <div class="about_text">
+                            Rubbish-handling is a quite complex issue, and it needs cooperative efforts from every person. Therefore, this application is made to educate people to handle their daily rubbish in a right way and develop their habits to classify the garbage.
+                        </div>
+                    </div>
+                </div>
+                <div class="donation">
+                    <div class="donation_title">
+                        DONATION
+                    </div>
+                    <div class="about_space">
+                        <div class="about_slogan">
+                            Make a donation to support our environment.
+                        </div>
+                        <div class="about_text">
+                            <div class="radio_space">
+                                <input type="radio" id="donateChoice1" name="donation" value="One time" checked="true">
+                                <label for="donateChoice1">One time</label>
+
+                                <input type="radio" id="donateChoice2" name="donation" value="Monthly">
+                                <label for="donateChoice2">Monthly</label>
+                            </div>
+                            <div class="row">
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $5
+                                    </div>
+                                </div>
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $10
+                                    </div>
+                                </div>
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $15
+                                    </div>
+                                </div>
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $20
+                                    </div>
+                                </div>
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $25
+                                    </div>
+                                </div>
+                                <div class="amount_space col-4">
+                                    <div class="amount">
+                                        $30
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment">
+                                <div class="about_slogan">
+                                    Payment Details
+                                </div>
+                                <form action="" method="POST" id="payment-form">
+                                    <span class="payment-error"></span>
+                                    <div class="form-row">
+                                        <label class="label">
+                                            <input class="input_text" type="text" placeholder="Card Number*" data-stripe="number" />
+                                        </label>
+                                    </div>
+                                    <div class="form-row">
+                                        <label class="label2">
+                                            <input class="input_text2" type="text" size="3" placeholder="CVC*" data-stripe="cvc" />
+                                        </label>
+                                        <label class="label3">
+                                            <input class="input_text2" type="text" placeholder="MM*" data-stripe="exp-month" />
+                                        </label>
+                                        <label class="label3">
+                                            <input class="input_text2" type="text" placeholder="YYYY*" data-stripe="exp-year" />
+                                        </label>                                  
+                                    </div>
+                                    <div class="submit">
+                                        <div class="submit_button">Submit</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="js/function.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCdEf70GQfs6S8ZG6hEIH5as-o4XqVC3WM",
+            authDomain: "appfinal-90f83.firebaseapp.com",
+            databaseURL: "https://appfinal-90f83.firebaseio.com",
+            projectId: "appfinal-90f83",
+            storageBucket: "appfinal-90f83.appspot.com",
+            messagingSenderId: "255722015431"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118349924-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118349924-1');
+    </script>
+</body>
+</html>

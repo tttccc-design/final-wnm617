@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TrashExpert</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lato:900i" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/learn.css">
+
+</head>
+<body>
+	<div class="hamburger_menu">
+		<nav role="navigation">
+			<div id="menuToggle">
+				<input type="checkbox" />
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<a href="http://peterchangsite.com/aau/wnm617/final_project/main.html" class="hamburger">
+                        <li>HOME</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/learn.html" class="hamburger">
+                        <li>LEARNING</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game1.html" class="hamburger">
+                        <li>GAME 1</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game2.html" class="hamburger">
+                        <li>GAME 2</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/donation.html" class="hamburger">
+                        <li>ABOUT US</li>
+                    </a>
+					<a id="log_out" class="hamburger"><li>LOG OUT</li></a>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- <div class="purpose">
+			Rubbish-handling is a quite complex issue,<br> 
+			and it needs cooperative efforts from every person.
+			<br>
+			<span class="name">TrashExpert</span>
+			is made to educate people to handle their daily rubbish in a right way and develop their habits to classify the garbage.
+		</div> -->
+	<div class="window">
+	    <div class="background">
+	        <div class="recycle_box" id="box1">
+	            <div class="title"><span> Compost </span></div>
+	            <div class="box_content row">
+	                <div class="col-2">
+	                   	<div class="list"><img src="img/leo/imgicon1.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon2.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon3.png"></div>
+                        <div class="list"><img src="img/leo/imgicon4.png"></div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Eggshells</span>
+                    	</div>                   	
+	                    <div class="list">
+	                    	<span class="list_text">Coffee filters</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Branches</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Cotton balls</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Meat/bones</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Paper plates</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Flowers</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Hair/fur</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Vegetables</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Paper bags</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Grasses</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Cardboard</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Fruit</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Tissues</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Leaves</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Wood</span>
+                    	</div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="recycle_box" id="box2">
+	            <div class="title"><span>Recycle</span></div>
+	            <div class="box_content row">
+	                <div class="col-2">
+	                    <div class="list"><img src="img/leo/imgicon5.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon6.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon8.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon9.png"></div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Al cans</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Plastic bags</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Linens</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Coffee cup</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Spray cans</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Bottles</span>
+                    	</div> 
+	                    <div class="list">
+	                    	<span class="list_text">Fabric</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Paper bags</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Paint cans</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">CD/DVD</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Rags</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Cardboard</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Steel cans</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Cup/plate</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Clothes</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Newspapers</span>
+                    	</div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="recycle_box" id="box3">
+	            <div class="title"><span>Landfill</span></div>
+	            <div class="box_content row">
+	                <div class="col-2">
+	                    <div class="list"><img src="img/leo/imgicon10.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon10.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon10.png"></div>
+	                    <div class="list"><img src="img/leo/imgicon10.png"></div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Feces</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Rubber</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Mirrors</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Hygiene</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Cigarette</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Sponges</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Cigarette</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Dishware</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Dental floss</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Styrofoam</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Balloons</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Plywood</span>
+                    	</div>
+	                </div>
+	                <div class="col_25">
+	                    <div class="list">
+	                    	<span class="list_text">Diapers</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Twist ties</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Pencils</span>
+                    	</div>
+	                    <div class="list">
+	                    	<span class="list_text">Glassware</span>
+                    	</div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="js/learn.js"></script>
+	<script src="js/login.js"></script>
+	<script>
+	    // Initialize Firebase
+	    var config = {
+	        apiKey: "AIzaSyCdEf70GQfs6S8ZG6hEIH5as-o4XqVC3WM",
+	        authDomain: "appfinal-90f83.firebaseapp.com",
+	        databaseURL: "https://appfinal-90f83.firebaseio.com",
+	        projectId: "appfinal-90f83",
+	        storageBucket: "appfinal-90f83.appspot.com",
+	        messagingSenderId: "255722015431"
+	    };
+	    firebase.initializeApp(config);
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118349924-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-118349924-1');
+	</script>
+	
+</body>
+</html>

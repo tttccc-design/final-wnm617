@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TrashExpert</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lato:900i" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	
+	<style type="text/css">
+		.background{
+			background-color: #3174C1;
+		}
+	</style>
+</head>
+<body>
+	<div class="login_window">
+	    <div class="container login_space">
+	        <div class="login_title">
+	            <img src="img/icons/logo.png" class="logo_img">
+	        </div>
+	        <div class="note">Sign in with social networks</div>
+	        <!-- 做 facebook login     -->
+	        <div class="socialicon">
+	            <img class="login_icon" src="img/icons/media1.png" onclick="handleFBLogin();">
+	            <img class="login_icon" src="img/icons/meida2.png" onclick="handleTwitterLogin();">
+	            <img class="login_icon" src="img/icons/media3.png" onclick="handleGoogleLogin();">
+	        </div>
+	        <img class="line" src="img/icons/Linexin.png">
+	        <div role="form" id="signupform">
+	            <div class="from-group">
+	                <input type="email" id="form-email" class="input_text" placeholder="Email">
+	            </div>
+	            <div class="from-group">
+	                <input type="password" id="form-password" class="input_text" placeholder="Password">
+	            </div>
+	            <input type="submit" id="signin" class="btn btn-light" value="Sign In" onclick="handleSignIn();">
+	            <input type="submit" id="signup" class="btn btn-outline-light" value="Sign Up" onclick="handleSignUp();">
+	        </div>
+	    </div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAtAr-Go_iygNdA4elir0xaQLnKzEpJ0oo",
+			authDomain: "spring-break-app-41c10.firebaseapp.com",
+			databaseURL: "https://spring-break-app-41c10.firebaseio.com",
+			projectId: "spring-break-app-41c10",
+			storageBucket: "spring-break-app-41c10.appspot.com",
+			messagingSenderId: "260858835749"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="js/login.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118349924-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-118349924-1');
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,137 @@
+.padding{
+    height: 15px;
+}
+.recycle_box{
+    min-height: 33.3333333333vh;
+}
+#box1{
+    background-color: #4A96CE;
+}
+#box2{
+    background-color: #4772A6;
+}
+#box3{
+    background-color: #5A5387;
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    cursor: pointer;
+}
+
+.title span{
+
+    display: inline-block;
+    width: 120px;
+    padding: 10px 0;
+    border: 1px solid white;
+    border-radius: 1px;
+
+
+}
+.box_content{
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.subtitle{
+    float: left;
+
+}
+
+.subtitle img{
+
+    width: 6%;
+    height: auto;
+}
+
+.box_content ul{
+    width:100%;
+
+}
+
+.box_content li{
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 0.5rem;
+    text-align: left;
+    display: inline;
+
+}
+.box_content{
+
+    width: 100%; /* 不写，展开时， 左右会有白边  */
+    height: 0;
+    transition: height 0.4s linear;
+    overflow: hidden;
+}
+.box_content_open{
+    height: 70vh;
+    transition: height 0.4s linear;
+}
+.dot{
+    padding-right: 10px;
+}
+
+.row{
+
+    justify-content: center;
+}
+
+
+.col-2 img{
+
+    width: 40%;
+    height: auto;
+
+    margin-top: 15px;
+}
+
+.col-2{
+
+    text-align: left;
+
+    font-size: 0.1rem;
+}
+
+.col div{
+
+    margin-top: 10px;
+}
+
+.list{
+
+    margin-top: 23px;
+}
+/*Laptop*/
+@media only screen and ( min-width: 1600px) {
+    .title{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+/*iPad*/
+@media only screen and ( max-width: 1100px) {
+    .title{
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+}
+/*iPhone Plus*/
+@media only screen and ( max-width: 850px) {
+    .title{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+/*iPhone*/
+@media only screen and ( max-width: 700px) {
+    .title{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

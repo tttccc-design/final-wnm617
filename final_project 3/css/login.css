@@ -1,0 +1,169 @@
+::placeholder { 
+    color: #d9d9d9;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.login_window{
+    height: 100vh;
+    background-image: url(../img/icons/bjtunew.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.subname{
+    font-size:0.8rem;
+    border:1px solid white;
+    width: 50%;
+    margin:0 auto;
+}
+.login_space{
+    position: relative;
+    top: 49%;
+    transform: translateY(-51%);
+    width: 100%;
+    max-width: 414px;
+    max-height: 736px;
+    color: white;
+    text-align: center;
+}
+.login_title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo_img{
+    width: 100px;
+}
+.from-group{
+    padding-bottom: 20px;
+}
+.input_text{
+    width: 50%;
+    font-size: 0.8rem;
+    font-weight: 300px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+
+.login_icon{
+    margin: 0 auto;
+    margin-right: 7px;
+    margin-left: 7px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.line{
+    width: 190px;
+}
+.note{
+    font-size: 0.8rem;
+    opacity: 0.5;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+
+/* responsive */
+/*Laptop*/
+@media only screen and ( min-width: 1200px) {
+    .login_title{
+        font-size: 4rem;
+    }
+    .subname{
+        font-size:1.5rem;
+        width: 94%;
+        margin-bottom:80px;
+    }
+    .note{
+        font-size: 1rem;
+        padding-bottom: 25px;
+    }
+    .login_icon{
+        width: 100px;
+        margin-bottom: 25px;
+    }
+    .line{
+        width: 340px;
+        padding-bottom: 20px;
+    }
+    .input_text{
+        width: 88%;
+    }
+    .from-group{
+        padding-bottom: 40px;
+    }
+    .btn{
+        width: 155px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/*iPad*/
+@media only screen and ( max-width: 1100px) {
+    .title{
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+}
+
+/*iPhone6*/
+@media only screen and ( width:667px) {
+    .logo_img{
+        width: 80px;
+    }
+}
+
+/*iPhoneSE*/
+@media only screen and ( width:568px) {
+    ::placeholder { 
+        font-size: 0.6rem;
+    }
+    .login_title{
+        font-size: 1.5rem;
+    }
+    .logo_img{
+        padding-top: 5px;
+        width: 60px;
+    }
+    .subname{
+        font-size:0.6rem;
+        width: 50%;
+        margin-bottom: 0;
+
+    }
+    .note{
+        font-size: 0.6rem;
+        padding-bottom: 10px;
+    }
+    .login_icon{
+        width: 50px;
+    }
+    .line{
+        width: 190px;
+        padding-bottom: 5px;
+    }
+    .input_text{
+        width: 50%;
+        font-size: 0.6rem;
+    }
+    .from-group{
+        padding-bottom: 5px;
+    }
+    #signin{
+        margin-top: 10px;
+    }
+    #signup{
+        margin-top: 10px;
+    }
+    .btn{
+        font-size: 0.9rem;
+    }
+}

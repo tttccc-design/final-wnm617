@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+</head>
+<body>
+<div class="login_window">
+    <div class="container login_space">
+        <div class="login_title">
+            <img src="img/icons/logo.png" class="logo_img">
+        </div>
+        <div class="note">Sign in with social networks</div>
+        <!-- 做 facebook login     -->
+        <div class="socialicon">
+            <img class="login_icon" src="img/icons/media1.png" onclick="handleFBLogin();">
+            <img class="login_icon" src="img/icons/meida2.png" onclick="handleTwitterLogin();">
+            <img class="login_icon" src="img/icons/media3.png" onclick="handleGoogleLogin();">
+        </div>
+        <img class="line" src="img/icons/Linexin.png">
+        <div role="form" id="signupform">
+            <div class="from-group">
+                <input type="email" id="form-email" class="input_text" placeholder="Email">
+            </div>
+            <div class="from-group">
+                <input type="password" id="form-password" class="input_text" placeholder="Password">
+            </div>
+            <input type="submit" id="signin" class="btn btn-light" value="Sign In" onclick="handleSignIn();">
+            <input type="submit" id="signup" class="btn btn-outline-light" value="Sign Up" onclick="handleSignUp();">
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCdEf70GQfs6S8ZG6hEIH5as-o4XqVC3WM",
+        authDomain: "appfinal-90f83.firebaseapp.com",
+        databaseURL: "https://appfinal-90f83.firebaseio.com",
+        projectId: "appfinal-90f83",
+        storageBucket: "appfinal-90f83.appspot.com",
+        messagingSenderId: "255722015431"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

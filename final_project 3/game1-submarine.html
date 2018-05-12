@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TrashExpert</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lato:900i" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/game1.css">
+	
+	
+
+</head>
+<body>
+	<div class="hamburger_menu">
+		<nav role="navigation">
+			<div id="menuToggle">
+				<input type="checkbox" />
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<a href="http://peterchangsite.com/aau/wnm617/final_project/main.html" class="hamburger">
+                        <li>HOME</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/learn.html" class="hamburger">
+                        <li>LEARNING</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game1.html" class="hamburger">
+                        <li>GAME 1</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game2.html" class="hamburger">
+                        <li>GAME 2</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/donation.html" class="hamburger">
+                        <li>ABOUT US</li>
+                    </a>
+					<a id="log_out" class="hamburger"><li>LOG OUT</li></a>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="window">
+		<div class="background grid">
+			<div class="game_space">
+				<div class="container-fluid">
+
+				  <div class="button" style="z-index: 1000000;">
+					    <input type="button" value="Generate" id="generate_button" class="view_link">
+				    </div>
+				    <div class="change-left" >
+						<div class="">
+							<a href="game1.html">
+								<img id="left_button" src="img/weiqi/left.png">
+							</a>
+				    	</div>
+					</div>
+				    <div class="generate_space" >
+						<div class="content_space1" id="world2">
+							<div>
+								<img id="close_button" src="img/weiqi/X.png">
+							</div>
+				    	</div>
+					</div>
+				</div>
+				<div class="row">						
+						<div class="col-12 mainbody">
+							<div class="tab-content game_content " id="v-pills-tabContent">
+								<div class="tab-pane fade show active " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+									<div id="maincover">
+										<div class="row">										
+											<div class="rs-outline">
+												<div class="row">
+													<div class="col-4 subrine-wing">
+							   							<img src="img/weiqi/subrine-wing-line.png"  id="b1">
+													</div>
+						   							<div class="col-4 subrine-body" >
+												   		<img src="img/weiqi/subrine-body-line.png" id="b2">
+												   	</div>
+												   	<div class="col-4 subrine-wing2" >
+													   	<img src="img/weiqi/subrine-wing-line2.png" id="b3" >
+												   	</div>
+												   	<div class="col-4 plane-jet" >
+												   		<img src="img/weiqi/cabine-line.png" id="b4">
+												   	</div>
+												   	<div class="col-4 plane-jet" >
+													   	<img src="img/weiqi/subrine-staw-line.png" id="b6">
+												   	</div>					 
+													<div class="col-4 plane-tail" >
+												    	<img src="img/weiqi/subrine-x-line.png" id="b5">
+													</div>												
+												</div>
+											</div>
+								         </div>
+							        </div>              			
+								</div>													
+							</div>
+						</div>
+						<div class="col-12 subbody">
+							<div class="row">
+				                <div class="pick">
+									<img src="img/weiqi/subrine-wing.png" id="bs1">
+								</div>
+								<div  class="pick">
+									<img src="img/weiqi/subrine-x.png" id="bs5" >
+								</div>
+								<div class=" pick">
+									<img src="img/weiqi/subrine-body.png" id="bs2"  >
+								</div>
+								<div class=" pick">
+									<img src="img/weiqi/subrine-staw.png" id="bs4" >
+								</div>
+								<div  class=" pick">
+									<img src="img/weiqi/cabine.png" id="bs3">
+								</div>
+							</div>
+						</div>
+						<!--showing  part-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.js" 
+  			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+	<script src="js/game1.js"></script>
+	<script src="js/three.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/function.js"></script>
+	<script src="js/game-subrine.js"></script>
+	<script src="js/login.js"></script>
+	<script>
+	    // Initialize Firebase
+	    var config = {
+	        apiKey: "AIzaSyCdEf70GQfs6S8ZG6hEIH5as-o4XqVC3WM",
+	        authDomain: "appfinal-90f83.firebaseapp.com",
+	        databaseURL: "https://appfinal-90f83.firebaseio.com",
+	        projectId: "appfinal-90f83",
+	        storageBucket: "appfinal-90f83.appspot.com",
+	        messagingSenderId: "255722015431"
+	    };
+	    firebase.initializeApp(config);
+	</script>
+	
+</body>
+</html>

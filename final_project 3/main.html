@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrashExpert</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody|Lato:900i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <style type="text/css">
+        .background{
+            background-image:url("img/waster.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger_menu">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/main.html" class="hamburger">
+                        <li>HOME</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/learn.html" class="hamburger">
+                        <li>LEARNING</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game1.html" class="hamburger">
+                        <li>GAME 1</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/game2.html" class="hamburger">
+                        <li>GAME 2</li>
+                    </a>
+                    <a href="http://peterchangsite.com/aau/wnm617/final_project/donation.html" class="hamburger">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a id="log_out" class="hamburger"><li>LOG OUT</li></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="window">
+        <div class="background">
+            <div class="container content_space">
+                <!--Put our contents in here-->
+                <div class="content">
+                    <div class=" first">
+                        <img src="img/leo/lolooo.png" id="logo">
+                    </div>
+                    <div class="second">
+                        <h2>"Trash recycling, a better world."</h2>
+                    </div>
+                    <div class="third">
+                        <a href="http://peterchangsite.com/aau/wnm617/final_project/learn.html">    
+                            <div class="main_link"> 
+                                Learning
+                            </div> 
+                        </a>
+                        <a href="http://peterchangsite.com/aau/wnm617/final_project/game1.html"> 
+                            <div class="main_link">
+                                Game1 
+                            </div>
+                        </a>
+                        <a href="http://peterchangsite.com/aau/wnm617/final_project/game2.html">
+                            <div class="main_link">
+                                Game2
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="js/login.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCdEf70GQfs6S8ZG6hEIH5as-o4XqVC3WM",
+            authDomain: "appfinal-90f83.firebaseapp.com",
+            databaseURL: "https://appfinal-90f83.firebaseio.com",
+            projectId: "appfinal-90f83",
+            storageBucket: "appfinal-90f83.appspot.com",
+            messagingSenderId: "255722015431"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118349924-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118349924-1');
+    </script>
+</body>
+</html>
